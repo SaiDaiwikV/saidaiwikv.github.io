@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a0d20"/><stop offset="1" stop-color="#151934"/>
+    </linearGradient>
+    <radialGradient id="og" cx="0.2" cy="0.15" r="0.7">
+      <stop stop-color="#FFA116" stop-opacity="0.22"/><stop offset="1" stop-color="#FFA116" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <rect width="400" height="300" fill="url(#og)"/>
+  <rect x="28" y="28" width="42" height="42" rx="11" fill="#1a1206" stroke="#FFA116" stroke-width="2"/>
+  <path d="M47 40 L39 49 L47 58 M51 40 L59 49 L51 58" stroke="#FFA116" stroke-width="3" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="56" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#ffffff">Leet<tspan fill="#FFA116">Code</tspan></text>
+  <text x="30" y="188" font-family="Inter,Arial,sans-serif" font-size="80" font-weight="800" fill="#FFA116">144</text>
+  <text x="34" y="214" font-family="Inter,Arial,sans-serif" font-size="16" fill="#c9cffb">Problems Solved</text>
+  <g transform="translate(30,240)">
+    <rect x="0" y="0" width="210" height="34" rx="17" fill="#ffffff" opacity="0.06"/>
+    <path d="M20 8 L23 15 L30 15.5 L24.5 20 L26.5 27 L20 23 L13.5 27 L15.5 20 L10 15.5 L17 15 Z" fill="#FFA116"/>
+    <text x="42" y="23" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="600" fill="#ffd9a0">50-Day Badge earned</text>
+  </g>
+</svg>

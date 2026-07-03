@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="420" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a0d20"/><stop offset="1" stop-color="#151934"/>
+    </linearGradient>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#E2CBFF"/><stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="rad" cx="0.5" cy="0.5" r="0.55">
+      <stop stop-color="#7C3AED" stop-opacity="0.40"/><stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#8ea0ff" opacity="0.06"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="420" height="300" fill="url(#bg)"/>
+  <rect width="420" height="300" fill="url(#dots)"/>
+  <ellipse cx="210" cy="150" rx="180" ry="130" fill="url(#rad)"/>
+
+  <g font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#60A5FA" opacity="0.13">
+    <text x="20" y="34">01001010 1101 0010</text>
+    <text x="250" y="60">1100 01 10110</text>
+    <text x="34" y="278">0110 1001 0100 1110</text>
+    <text x="270" y="256">10 0111 01</text>
+  </g>
+
+  <g>
+    <rect x="30" y="118" width="98" height="64" rx="12" fill="#0d1030" stroke="#A78BFA" stroke-width="2" opacity="0.9"/>
+    <text x="79" y="157" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+          font-size="20" font-weight="700" fill="#c9cffb">HELLO</text>
+    <text x="79" y="176" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+          font-size="9" fill="#7f8bd6">plaintext</text>
+  </g>
+
+  <g>
+    <rect x="292" y="118" width="98" height="64" rx="12" fill="#0d1030" stroke="url(#pg)" stroke-width="2.4"/>
+    <text x="341" y="157" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+          font-size="20" font-weight="700" fill="#CBACF9">Xz#%9</text>
+    <text x="341" y="176" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+          font-size="9" fill="#9b7fd6">ciphertext</text>
+  </g>
+
+  <g stroke="#34D399" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 150 H172"/><path d="M166 145 L172 150 L166 155"/>
+    <path d="M248 150 H288"/><path d="M282 145 L288 150 L282 155"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="210" cy="150" r="36" fill="#0d1030" stroke="url(#pg)" stroke-width="3"/>
+    <path d="M201 150 V143 A9 9 0 0 1 219 143 V150" fill="none" stroke="#E2CBFF"
+          stroke-width="2.6" stroke-linecap="round"/>
+    <rect x="197" y="150" width="26" height="20" rx="4" fill="none" stroke="#E2CBFF" stroke-width="2.6"/>
+    <circle cx="210" cy="160" r="2.4" fill="#E2CBFF"/>
+  </g>
+
+  <text x="24" y="42" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#CBACF9" font-weight="700">ENCRYPT</text>
+</svg>
